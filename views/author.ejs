@@ -1,0 +1,9 @@
+<% include partials/header1 %>
+
+<h1>Authors Details</h1>
+<ul>
+<% users.forEach(function(usr){%>
+<li><%= usr.username %> <%= usr.postscount %> posts</li>
+<% }) %>
+</ul>
+<% include partials/footer1 %>
